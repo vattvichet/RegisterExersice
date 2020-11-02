@@ -8,15 +8,50 @@
 </head>
 
 <body>
-
-
+    <hr>
+    <h1>Race Registration</h1>
     <form action="/register">
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first" required>
+            <label for="last">Last Name</label>
+            <input type="text" name="last" id="last" required>
+        </div>
+
+        <br>
+        <p><b>Select a Race :</b></p>
 
 
+        <div>
+            <input type="radio" name="sort" id="funrun">
+            <label for="funrun">Fun Run 5km</label>
+        </div>
+        <div>
+            <input type="radio" name="sort" id="halfrun">
+            <label for="halfrun">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="sort" id="fullrun">
+            <label for="fullrun">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="password" required minlength="8">
 
-
-
-
+        </div>
+        <br>
+        <div>
+            <select name="group" id="group" required>
+                <option id="group" value="18-25">18-24</option>
+                <option id="group" value="18-25">25-30</option>
+                <option id="group" value="18-25">31-40</option>
+            </select>
+        </div>
+        <br>
+        <button>Register</button>
+        <hr>
     </form>
 
 
